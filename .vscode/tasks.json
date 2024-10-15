@@ -1,0 +1,32 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe build active file",
+            "command": "C:/msys64/mingw64/bin/gcc.exe",
+            "args": [
+                "-g",
+                "-std=c11",
+                "-I${workspaceFolder}/include",
+                "-L${workspaceFolder}/lib",
+                "${workspaceFolder}/src/mainTP.c",
+                "${workspaceFolder}/src/glad.c",
+                "-lglfw3dll",
+                "-o",
+                "${workspaceFolder}/excutable.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "C:/msys64/mingw64/bin/gcc.exe"
+        }
+    ]
+}
